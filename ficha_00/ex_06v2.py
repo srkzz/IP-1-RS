@@ -7,3 +7,7 @@ print(f"O valor 2 é: ", valor2)
 
 reversed_values = (valor2, valor1)
 print(f"Valores invertidos: {reversed_values[0]}, {reversed_values[1]}")    
+
+#sem variavel auxiliar
+
+valor2, valor1 = valor1, valor2
