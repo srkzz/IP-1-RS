@@ -1,11 +1,13 @@
+
+
 nr = int(input("Escreve um número: "))
 
-
 while nr != 2:
-    range(2, nr)
-    print("Número", nr%2)
-    nr = int(input("Escreve um número: "))
- 
-
-
- TENHO QUE TERMINARRRR
+    nr -= 1  
+    i = nr 
+    if i % 2 == 0:
+        print(f"\t\t{i}")
+else:
+    print("Número 2 encontrado, saindo do loop.")
+  
+      
