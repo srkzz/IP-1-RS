@@ -1,30 +1,27 @@
-def menu():
-    while True:
-        print("\nMenu:")
-        print("1. Criar")
-        print("2. Atualizar")
-        print("3. Eliminar")
-        print("4. Sair")
-        
-        try:
-            opcao = int(input("Escolha uma opção: "))
-            
-            if opcao == 1:
-                print("Opção 'Criar' selecionada.")
-                # Adicione a lógica para criar aqui
-            elif opcao == 2:
-                print("Opção 'Atualizar' selecionada.")
-                # Adicione a lógica para atualizar aqui
-            elif opcao == 3:
-                print("Opção 'Eliminar' selecionada.")
-                # Adicione a lógica para eliminar aqui
-            elif opcao == 4:
-                print("Saindo do programa...")
-                break
-            else:
-                print("Erro: Opção inválida. Tente novamente.")
-        except ValueError:
-            print("Erro: Entrada inválida. Por favor, insira um número.")
+# Programa bancário para simular operações de crédito ou débito
 
-if __name__ == "__main__":
-    menu()
+# Solicitar o saldo inicial do usuário
+saldo = float(input("Digite o saldo inicial da conta: "))
+
+# Solicitar o tipo de operação
+operacao = input("Digite o tipo de operação (crédito ou débito): ").strip().lower()
+
+# Solicitar o valor da operação
+valor = float(input("Digite o valor da operação: "))
+
+# Processar a operação
+if operacao == "crédito":
+    saldo += valor
+elif operacao == "débito":
+    saldo -= valor
+else:
+    print("Operação inválida. Por favor, escolha 'crédito' ou 'débito'.")
+
+# Exibir o saldo final
+print(f"Saldo final: R$ {saldo:.2f}")
+
+# Verificar se o saldo final é positivo ou negativo
+if saldo >= 0:
+    print("O saldo final é positivo.")
+else:
+    print("O saldo final é negativo.")

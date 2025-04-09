@@ -1,12 +1,17 @@
-# Programa para encontrar o menor de três números inteiros
+num1 = 0
+num2 = 0 
+num3 = 0
 
-# Solicitar entrada de dados do usuário
-num1 = int(input("Digite o primeiro número inteiro: "))
-num2 = int(input("Digite o segundo número inteiro: "))
-num3 = int(input("Digite o terceiro número inteiro: "))
+num1 = float(input(" Digite a nota 1: ")) 
+num2 = float(input(" Digite a nota 2: ")) 
+num3 = float(input(" Digite a nota 3: ")) 
 
-# Determinar o menor número
-menor = min(num1, num2, num3)
+# Corrigindo o cálculo da média ponderada
+media_ponderada = (num1 * 0.20 + num2 * 0.30 + num3 * 0.50)
+print(f"A média ponderada é: {media_ponderada}")
 
-# Exibir o menor número
-print(f"O menor número é: {menor}")
+if media_ponderada >= 9.5:
+    print("Aprovado")
+
+else:
+    print("Reprovado")

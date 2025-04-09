@@ -1,7 +1,7 @@
-imposto1= 0.02
-imposto2= 0.03
-imposto3= 0.035
-imposto4= 0.04
+imposto1= 0.2
+imposto2= 0.3
+imposto3= 0.35
+imposto4= 0.4
 salario= int(input("Digite o seu salário: "))
 
 

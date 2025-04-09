@@ -1,19 +1,30 @@
-# Solicita ao usuário que insira um horário no formato de 24 horas
-horario_24h = input("Digite um horário no formato 24 horas (HH:MM): ")
+def menu():
+    while True:
+        print("\nMenu:")
+        print("1. Criar")
+        print("2. Atualizar")
+        print("3. Eliminar")
+        print("4. Sair")
+        
+        try:
+            opcao = int(input("Escolha uma opção: "))
+            
+            if opcao == 1:
+                print("Opção 'Criar' selecionada.")
+                # Adicione a lógica para criar aqui
+            elif opcao == 2:
+                print("Opção 'Atualizar' selecionada.")
+                # Adicione a lógica para atualizar aqui
+            elif opcao == 3:
+                print("Opção 'Eliminar' selecionada.")
+                # Adicione a lógica para eliminar aqui
+            elif opcao == 4:
+                print("Saindo do programa...")
+                break
+            else:
+                print("Erro: Opção inválida. Tente novamente.")
+        except ValueError:
+            print("Erro: Entrada inválida. Por favor, insira um número.")
 
-# Divide o horário em horas e minutos
-horas, minutos = map(int, horario_24h.split(':'))
-
-# Determina se é AM ou PM
-if horas >= 12:
-    periodo = "PM"
-else:
-    periodo = "AM"
-
-# Converte as horas para o formato de 12 horas
-horas_12h = horas % 12
-if horas_12h == 0:
-    horas_12h = 12
-
-# Exibe o horário no formato de 12 horas
-print(f"{horas_12h}:{minutos:02d} {periodo}")
+if __name__ == "__main__":
+    menu()
