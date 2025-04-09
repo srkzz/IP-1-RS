@@ -1,0 +1,5 @@
+for i in range(1, 401):
+    if i % 2 == 0:
+        print("Número", i)
+        if i == 401:
+            break

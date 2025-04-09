@@ -1,0 +1,6 @@
+
+for i in range(531, 750):
+   if i % 2 != 0:
+        print("Número", i)
+        if i == 751:
+            break

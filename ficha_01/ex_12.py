@@ -11,13 +11,13 @@ def menu():
             
             if opcao == 1:
                 print("Opção 'Criar' selecionada.")
-                # Adicione a lógica para criar aqui
+                #  lógica para criar aqui
             elif opcao == 2:
                 print("Opção 'Atualizar' selecionada.")
-                # Adicione a lógica para atualizar aqui
+                # lógica para atualizar aqui
             elif opcao == 3:
                 print("Opção 'Eliminar' selecionada.")
-                # Adicione a lógica para eliminar aqui
+                #  lógica para eliminar aqui
             elif opcao == 4:
                 print("Saindo do programa...")
                 break

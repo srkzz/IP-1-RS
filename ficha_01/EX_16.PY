@@ -16,6 +16,3 @@ else:
             resultado[nota] = quantidade
         valor %= nota
 
-print(f"Notas necessárias para o valor solicitado:")
-for nota, quantidade in resultado.items():
-    print(f"{quantidade} nota(s) de {nota} euros")
