@@ -7,5 +7,3 @@ while i > 0:
     j = math.factorial(i)
     print(f"({n} * {i}) = {j}")
     i -= 1 
-
-
